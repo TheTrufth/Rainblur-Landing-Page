@@ -12,8 +12,8 @@ const Home = () => {
                         </span>
                     </h1>
                     <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-                        Unlike a normal diary where you would write, create a vocal record
-                        which you can share with your healthcare provider.
+                        Unlike a normal diary where you would write, NudgeShare allows you to
+                        create a vocal record which you can share with your healthcare provider.
                     </p>
 
                     <div class="stats shadow bg-transparent">
@@ -30,16 +30,14 @@ const Home = () => {
                         </div>
 
                     </div>
+
                 </div>
 
                 {/* <!--Right Col--> */}
                 <div className="w-full md:w-3/5 p-12 overflow-hidden">
                     <div className="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6">
-
                         <img src={require("../App/pics/demo.png")} alt="on-screen" />
-
                     </div>
-
                 </div>
 
 

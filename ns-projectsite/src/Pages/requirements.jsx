@@ -12,7 +12,7 @@ const Requirements = () => {
                     </h1>
 
 
-                    <p className="text-left collapse-content bg-base-100">
+                    <p className="text-left collapse-content">
                         The NHS sees speech analysis as a area of promise in the treatment of various conditions. For example, it can be associated
                         with depression and bipolar disorder.
                         This data is usually collected over phone calls and analysed after some delay which can be cumbersome to both the patient and the health care provider.
@@ -25,17 +25,17 @@ const Requirements = () => {
                 </div>
                 <div className="divider" />
 
-                <div tabIndex="0" className="collapse collapse-arrow container focus:border focus:border-base-300 focus:bg-base-100 rounded-box">
+                <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
                         &gt; Client Requirements
                     </h1>
                     <div className="collapse-content">
                         <p className="text-left">
-                            We met our client <span className="text-sky-500">(Dr Joseph Connor)</span> to discuss the requirements for our application. We agreed on regular weekly meetings where we can update him on the progress at each stage getting feedback as well.
+                            We met our client <span className="text-sky-500">(Dr Joseph Connor)</span> to discuss the requirements for our application. We agreed on regular weekly zoom meetings where we can update him on the progress at each stage getting feedback as well.
                             You can find a summary of these meetings here. </p>
                         <p className="my-3">
-                            He said that there was an existing Mobile App (called MobileV) currently in use made as a Masters project, but because of its restriction on running on limited devices, it was not as effective as intended.
+                            He said that there was an existing solution (called MobileV) currently in use made as a Masters project, but because of its restriction on running on limited devices, it was not as effective as intended.
                         </p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const Requirements = () => {
                     <div className="collapse-content">
                         <p className='my-2'>The main requirement of the new application was to bring MobileV into a PWA format meaning it is runnable and installable on all devices with browser from Mobile to Desktop.
                             The client added that it should use the same prewritten Flask Backend as the previous iteration.</p>
-                        <div class="mx-auto mb-3 card w-1/2 md:w-1/3 bg-base-100 shadow-xl md:flex-row">
+                        <div class="mx-auto mb-3 card w-1/2 md:w-1/3  shadow-xl md:flex-row">
                             <figure><img src={require('../App/pics/old-app/old-app-4.png')} alt="old-app" /></figure>
                             <div class="card-body font-light w-fit h-fit">
                                 <p>A screenshot from MobileV application.</p>
@@ -74,7 +74,7 @@ const Requirements = () => {
 
                 </div>
                 <div className="divider" />
-                <div tabIndex="0" className="collapse collapse-arrow container focus:border focus:border-base-300 focus:bg-base-100 rounded-box">
+                <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
                         &gt; MoSCoW Requirements
