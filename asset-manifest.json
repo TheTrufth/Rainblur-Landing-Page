@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Rainblur-Landing-Page/static/css/main.810c1f81.css",
-    "main.js": "/Rainblur-Landing-Page/static/js/main.cd94326c.js",
-    "static/media/header.png": "/Rainblur-Landing-Page/static/media/header.13a0210d5b068658f791.png",
-    "static/media/demo.png": "/Rainblur-Landing-Page/static/media/demo.1e357d4ae22ff650b40d.png",
-    "static/media/system-diagram.png": "/Rainblur-Landing-Page/static/media/system-diagram.74937c432415609b63c4.png",
-    "static/media/site-map.png": "/Rainblur-Landing-Page/static/media/site-map.f7dc6c7f5260282cdb66.png",
-    "static/media/old-app-4.png": "/Rainblur-Landing-Page/static/media/old-app-4.d9deba15eeafe98804db.png",
-    "index.html": "/Rainblur-Landing-Page/index.html",
-    "main.810c1f81.css.map": "/Rainblur-Landing-Page/static/css/main.810c1f81.css.map",
-    "main.cd94326c.js.map": "/Rainblur-Landing-Page/static/js/main.cd94326c.js.map"
+    "main.css": "/static/css/main.0aa38d28.css",
+    "main.js": "/static/js/main.18a8246f.js",
+    "static/media/header.png": "/static/media/header.13a0210d5b068658f791.png",
+    "static/media/demo.png": "/static/media/demo.1e357d4ae22ff650b40d.png",
+    "static/media/system-diagram.png": "/static/media/system-diagram.74937c432415609b63c4.png",
+    "static/media/site-map.png": "/static/media/site-map.f7dc6c7f5260282cdb66.png",
+    "static/media/old-app-4.png": "/static/media/old-app-4.d9deba15eeafe98804db.png",
+    "index.html": "/index.html",
+    "main.0aa38d28.css.map": "/static/css/main.0aa38d28.css.map",
+    "main.18a8246f.js.map": "/static/js/main.18a8246f.js.map"
   },
   "entrypoints": [
-    "static/css/main.810c1f81.css",
-    "static/js/main.cd94326c.js"
+    "static/css/main.0aa38d28.css",
+    "static/js/main.18a8246f.js"
   ]
 }
