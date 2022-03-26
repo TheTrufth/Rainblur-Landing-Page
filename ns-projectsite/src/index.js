@@ -9,6 +9,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path='*' element={<App />} />
+        <Route path='/*' render={() => { window.location.href = "index.html" }} />
       </Routes>
     </BrowserRouter>
 

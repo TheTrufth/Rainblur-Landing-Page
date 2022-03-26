@@ -49,7 +49,7 @@ const Requirements = () => {
                     <div className="collapse-content">
                         <p className='my-2'>The main requirement of the new application was to bring MobileV into a PWA format meaning it is runnable and installable on all devices with browser from Mobile to Desktop.
                             The client added that it should use the same prewritten Flask Backend as the previous iteration.</p>
-                        <div class="mx-auto mb-3 card w-1/2 md:w-1/3  shadow-xl md:flex-row">
+                        <div class="mx-auto mb-3 card w-1/2 shadow-xl md:flex-row">
                             <figure><img src={require('../App/pics/old-app/old-app-4.png')} alt="old-app" /></figure>
                             <div class="card-body font-light w-fit h-fit">
                                 <p>A screenshot from MobileV application.</p>
@@ -67,7 +67,7 @@ const Requirements = () => {
                                 <li>Can run inside browser.</li>
                                 <li>Instable on all devices with browser</li>
                                 <li>Low bundle size</li>
-                                <li>Uses the same backend so no comprimises</li>
+                                <li>Uses the same backend so account/backend data does not need to be migrated.</li>
                             </div>
                         </div>
                     </div>
@@ -83,29 +83,116 @@ const Requirements = () => {
                         <h2 className="transform transition hover:scale-105 duration-300 ease-in-out bg-clip-text text-transparent bg-gradient-to-bl from-emerald-400 via-yellow-200 to-green-600 text-center text-xl md:text-2xl underline-offset-4 mb-8 underline decoration-pink-600">
                             The User App
                         </h2>
-                        <h3 className="underline-offset-2 underline decoration-pink-600 bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Must Have</h3>
-                        <li>Record journal entries of up to 10 minutes</li>
-                        <li>Record journal entries with a predetermined duration (e.g. 30s)</li>
-                        <li>Give entries a name, description and up to 3 scores (set by SRO)</li>
-                        <li>View a list of stored journal entries</li>
-                        <li>Listen to specific journal entries and view/edit associated data</li>
-                        <li>Request transcription for a journal entry</li>
-                        <li>View a word cloud for a journal entry if it has been transcribed</li>
-                        <li>Delete stored journal entries and associated data</li>
-                        <li>View graphs summarising speaking rate and scores over time</li>
-                        <li>Interact with these graphs to view word clouds for specific days</li>
-                        <li>Consent to automatically share self-specified data with their SRO</li>
-                        <li>Manually share entry data with contacts via WhatsApp</li>
-                        <li>Change their password</li>
-                        <h3 className="underline-offset-2 underline decoration-pink-600 bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Should have</h3>
-                        <li>Filter journal entries being displayed (e.g. by date)</li>
-                        <li>View graphs summarising usage (e.g. minutes journaled per week)</li>
-                        <li>Opt-in to receive reminders once per week to record an entry</li>
-                        <h3 className="underline-offset-2 underline decoration-pink-600 bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Could have</h3>
-                        <li>Reset their password</li>
-                        <h3 className="underline-offset-2 underline decoration-pink-600 bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Won't have</h3>
-                        <li>Receive NLU insights on their transcripts (e.g. emotion recog.)</li>
-                        <li>Register themselves (Admins retain 100% control)</li>
+                        <div class="overflow-x-auto my-8">
+                            <table class="table w-full table-compact">
+
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th className="underline-offset-2 underline decoration-pink-600  uppercase font-bold">Must Have</th>
+                                        <th className="underline-offset-2 underline decoration-pink-600 uppercase font-bold">Should Have</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Record journal entries of up to 10 minutes</td>
+                                        <td>Filter journal entries being displayed (e.g. by date)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Record journal entries with a predetermined duration (e.g. 30s)</td>
+                                        <td>View graphs summarising usage (e.g. minutes journaled per week)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Give entries a name, description and up to 3 scores (set by SRO)</td>
+                                        <td>Opt-in to receive reminders once per week to record an entry</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>View a list of stored journal entries</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Listen to specific journal entries and view/edit associated data</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td>Request transcription for a journal entry</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>7</th>
+                                        <td>View a word cloud for a journal entry if it has been transcribed</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>8</th>
+                                        <td>Delete stored journal entries and associated data</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>9</th>
+                                        <td>View graphs summarising speaking rate and scores over time</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>10</th>
+                                        <td>Interact with these graphs to view word clouds for specific days</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>11</th>
+                                        <td>Consent to automatically share self-specified data with their SRO</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>12</th>
+                                        <td>Manually share entry data with contacts via WhatsApp</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>13</th>
+                                        <td>Change their password</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table w-full table-compact">
+
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th className="underline-offset-2 underline decoration-pink-600 uppercase font-bold">Could Have</th>
+                                        <th className="underline-offset-2 underline decoration-pink-600 uppercase font-bold">Won't Have</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Reset their password</td>
+                                        <td>Receive NLU insights on their transcripts (e.g. emotion recog.)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Register themselves (Admins retain 100% control)</td>
+                                        <td>Opt-in to receive reminders once per week to record an entry</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Give entries a name, description and up to 3 scores (set by SRO)</td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
                         <h2 className="transform transition hover:scale-105 duration-300 ease-in-out bg-clip-text text-transparent bg-gradient-to-bl from-emerald-400 via-yellow-200 to-green-600 text-center text-xl md:text-2xl underline-offset-4 mb-8 underline decoration-pink-600">
                             Non-functional
                         </h2>
@@ -127,6 +214,8 @@ const Requirements = () => {
                         <h3 className="underline-offset-2 underline decoration-pink-600 bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Won't Have</h3>
                         <li>Publish the app in the Apple or Google app stores</li>
                         <li>Store encrypted audio recordings on the user’s mobile device</li>
+
+
                     </div>
 
 

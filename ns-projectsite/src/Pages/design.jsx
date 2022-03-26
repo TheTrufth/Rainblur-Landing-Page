@@ -18,7 +18,7 @@ const Design = () => {
                         </p>
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Data stored in IndexedDB</h2>
                         <p className='my-2'>
-                            Here is a list of the key, value pairs stored in IndexedDB
+                            Here is a list of the key, value pairs (App Data) stored in IndexedDB.
                         </p>
                         <div class="overflow-x-auto">
                             <table class="table w-full table-compact">
@@ -214,8 +214,14 @@ const Design = () => {
                     </h1>
 
                     <div className="collapse-content">
-                        <div class="mx-auto mb-3 card w-full bg-base-100 shadow-xl md:flex-row">
-                            <figure><img src={require('../App/pics/diagrams/system-diagram.png')} alt="system-diagram" /></figure>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='rounded-2xl' src={require('../App/pics/diagrams/system-diagram.png')} alt="system-diagram" /></figure>
+                        </div>
+                        <div class="mx-auto mb-3 card w-1/2 shadow-xl md:flex-row">
+                            <figure><img src={require('../App/pics/old-app/old-app-4.png')} alt="old-app" /></figure>
+                            <div class="card-body font-light w-fit h-fit">
+                                <p>A screenshot from MobileV application.</p>
+                            </div>
                         </div>
                         <p className='my-2'>
                             NudgeShare uses the <b>same</b> backend API as MobileV, at the clients request.
@@ -227,18 +233,30 @@ const Design = () => {
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Front-end</h2>
                         <p className='my-2'>
                             It has a new front-end written in <span className='text-secondary font-mono'>React</span>.
-                            It stores front-end data in <span className='text-secondary font-mono'>IndexedDB</span> which is used for storing structured data such as <span className='text-secondary font-mono'>.mp3</span> recordings, <span className='text-secondary font-mono'>base64</span> wordclouds and authentication data.
+                            It stores front-end data in <span className='text-secondary font-mono'>IndexedDB</span> which is used for 'storing structured data' such as <span className='text-secondary font-mono'>.mp3</span> recordings, <span className='text-secondary font-mono'>base64</span> wordclouds and authentication data.
                             <a href='https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API' class="link mx-1 text-secondary font-mono">IndexedDB[1]</a> was vital and core to the app as it was used for persisting data inbetween each user session.
                         </p>
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Back-end</h2>
                         <p className='my-2'>
-                            The backend is written in <span className='text-secondary font-mono'>Flask</span> and uses the reverse proxy <span className='text-secondary font-mono'>WSGI</span> server  <span className='text-secondary font-mono'>gunicorn</span> to
-                            host the backend on the <span className='text-secondary font-mono'>nginx</span> web server.
+                            The backend is written in <span className='text-secondary font-mono'>Flask</span> and uses the <span className='text-secondary font-mono'>WSGI</span> server  <span className='text-secondary font-mono'>gunicorn</span> to
+                            host the backend on the reverse proxy <span className='text-secondary font-mono'>nginx</span> web server.
                         </p>
                         <p className='my-2'>
                             <span className='text-secondary font-mono'>IBM STT SDK</span> was used communicate with the IBM watson speech-to-text API used to transcribe audio and get the wordcloud of the recordings.
 
                         </p>
+                        <div className="divider" />
+                        <h3 className="font-bold text-2xl underline underline-offset-2 text-primary">
+                            References
+                        </h3>
+                        <ul>
+                            <li>[0] React <a className='underline' href='https://reactjs.org/'>https://reactjs.org/ </a>. </li>
+                            <li>[1] IndexedDB <a className='underline' href='https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API'>https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API </a>. </li>
+                            <li>[2] Flask <a className='underline' href='https://flask.palletsprojects.com/en/2.0.x/'>https://flask.palletsprojects.com/en/2.0.x/ </a>. </li>
+                            <li>[3] gunicorn <a className='underline' href='https://gunicorn.org/'>https://gunicorn.org/ </a>. </li>
+                            <li>[4] IBM Watson <a className='underline' href='https://cloud.ibm.com/apidocs/speech-to-text?code=python'>https://cloud.ibm.com/apidocs/speech-to-text?code=python</a>. </li>
+
+                        </ul>
                     </div>
 
                 </div>
@@ -250,7 +268,7 @@ const Design = () => {
                     </h1>
 
                     <div className="collapse-content">
-                        <div class="mx-auto mb-3 card w-full bg-base-100 shadow-xl md:flex-row">
+                        <div class="mx-auto mb-3 card w-6/12 bg-base-100 shadow-xl">
                             <figure><img src={require('../App/pics/diagrams/site-map.png')} alt="system-diagram" /></figure>
                         </div>
                         <p className='my-2'>

@@ -5,6 +5,7 @@ import Footer from "../Navbar/Footer";
 import Requirements from "../Pages/requirements";
 import { useEffect, useState } from "react";
 import Design from "../Pages/design";
+import Research from "../Pages/research";
 export default function App() {
     const [stickyClass, setStickyClass] = useState('relative');
 
@@ -39,11 +40,12 @@ export default function App() {
                 <Navbar />
 
                 {/* <!--Main--> */}
-                <div className="container pt-10 md:pt-20 mx-auto flex flex-wrap flex-col md:flex-row items-center p-6">
+                <div className="container pt-10 md:pt-20 flex flex-wrap flex-col md:flex-row items-center p-6">
                     <Routes>
                         <Route path="*" element={<Home />} />
-                        <Route path='/requirements' element={<Requirements />} />
-                        <Route path='/design' element={<Design />} />
+                        <Route path='ns-projectsite/requirements' element={<Requirements />} />
+                        <Route path='ns-projectsite/design' element={<Design />} />
+                        <Route path='ns-projectsite/research' element={<Research />} />
 
                     </Routes>
                     {/* <!--Footer--> */}
