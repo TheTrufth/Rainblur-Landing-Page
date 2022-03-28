@@ -6,6 +6,7 @@ import Requirements from "../Pages/requirements";
 import { useEffect, useState } from "react";
 import Design from "../Pages/design";
 import Research from "../Pages/research";
+import Implementation from "../Pages/implementation";
 export default function App() {
     const [stickyClass, setStickyClass] = useState('relative');
 
@@ -46,7 +47,7 @@ export default function App() {
                         <Route path='ns-projectsite/requirements' element={<Requirements />} />
                         <Route path='ns-projectsite/design' element={<Design />} />
                         <Route path='ns-projectsite/research' element={<Research />} />
-
+                        <Route path='ns-projectsite/implementation' element={<Implementation />} />
                     </Routes>
                     {/* <!--Footer--> */}
 

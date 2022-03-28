@@ -87,7 +87,7 @@ const Requirements = () => {
                         &gt; Use Case Diagram
                     </h1>
                     <div className="collapse-content">
-                        <img className='mx-auto rounded-2xl w-1/2' src={require('../App/pics/diagrams/use-case.png')} alt='use-case' />
+                        <img className='mx-auto rounded-2xl w-10/12' src={require('../App/pics/diagrams/use-case.png')} alt='use-case' />
                     </div>
                 </div>
                 <div className='divider' />
