@@ -35,7 +35,14 @@ const Requirements = () => {
                             We met our client <span className="text-sky-500">(Dr Joseph Connor)</span> to discuss the requirements for our application. We agreed on regular weekly zoom meetings where we can update him on the progress at each stage getting feedback as well.
                             You can find a summary of these meetings here. </p>
                         <p className="my-3">
-                            He said that there was an existing solution (called MobileV) currently in use made as a Masters project, but because of its restriction on running on limited devices, it was not as effective as intended.
+                            Initial key requirements were gathered over a <span className="text-sky-500">Zoom</span> meeting
+                            from which we made a <span className="text-sky-500">MoSCoW</span> list.
+                            Some questions that were asked during this meeting were:
+                            <li className='text-info'>How does our project differ from MobileV?</li>
+                            <li className='text-info'>Are there any specific frameworks you would like us to use?</li>
+                            <li className='text-info'>What is your view on users consent and privacy?</li>
+                            He said that there was an existing solution (called <span className="text-sky-500">MobileV</span>) currently in use made as a Masters project, but because of its restriction on running on limited devices, it was not as effective as intended.
+
                         </p>
                     </div>
                 </div>
@@ -70,6 +77,52 @@ const Requirements = () => {
                                 <li>Uses the same backend so account/backend data does not need to be migrated.</li>
                             </div>
                         </div>
+                    </div>
+
+                </div>
+                <div className='divider' />
+                <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Use Case Diagram
+                    </h1>
+                    <div className="collapse-content">
+
+                        <img className='mx-auto rounded-2xl w-1/2' src={require('../App/pics/diagrams/use-case.png')} alt='use-case' />
+                    </div>
+                </div>
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Personas
+                    </h1>
+
+                    <div className="collapse-content">
+                        <p className='my-2'>We created two personas for two different users of our system. There is also some background information included to better understand their perspective.</p>
+
+                        <div class="mx-auto mb-3 card w-11/12 shadow-xl md:flex-row">
+                            <figure><img src={require('../App/pics/personas/Slide1.jpg')} alt="old-app" /></figure>
+                            <div class="card-body font-light w-fit h-fit">
+                                <p className='font-extrabold text-3xl'>Kate McGinley​</p>
+                                <p className='quoted font-bold'>“I would benefit from an easier way to express feelings in a diary app”​</p>
+                                <p>Kate has had a history of lung diseases. She goes to the hospital every week to have her lungs tested, and has a call with a doctor every 3 days to test her voice. She would have less visits and calls with the NHS.
+                                    She also struggles to write or type and wants to be able to use her voice to leave diary’s. Would benefit from seeing a visual summary of her voice diaries.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mx-auto mb-3 card w-11/12 shadow-xl md:flex-row">
+                            <figure><img src={require('../App/pics/personas/Slide2.jpg')} alt="old-app" /></figure>
+                            <div class="card-body font-light w-fit h-fit">
+                                <p className='font-extrabold text-3xl'>Kyle George Michael</p>
+                                <p className='quoted font-bold'>“I was diagnosed with depression and anxiety, told to keep a record of my feelings"​</p>
+                                <p>As a young adult, Kyle is now at the age where he is responsible for his own health. He has recently been diagnosed with moderate depression and anxiety, and is on the road to recovery.
+                                    His GP recommends that he takes a diary, but he doesn’t have the time or attention span to write long.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>

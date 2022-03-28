@@ -210,18 +210,31 @@ const Design = () => {
                 <div tabIndex="0" className="collapse container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Database Schema (Back-end SQL)
+                    </h1>
+
+                    <div className="collapse-content">
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='rounded-2xl w-10/12' src={require('../App/pics/diagrams/database.png')} alt="system-diagram" /></figure>
+                        </div>
+                        <p className='my-2'>
+                            As NudgeShare shares the same Back-End code as MobileV, the ER diagram is the same.
+                            <div className="font-bold text-info">Referenced from Matthew Jones (main developer of MobileV) report. It has been provided and used with permission from the client (Joesph Connor).</div>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
                         &gt; System Architecture
                     </h1>
 
                     <div className="collapse-content">
                         <div class="mx-auto mb-3 card w-full shadow-xl">
                             <figure><img className='rounded-2xl' src={require('../App/pics/diagrams/system-diagram.png')} alt="system-diagram" /></figure>
-                        </div>
-                        <div class="mx-auto mb-3 card w-1/2 shadow-xl md:flex-row">
-                            <figure><img src={require('../App/pics/old-app/old-app-4.png')} alt="old-app" /></figure>
-                            <div class="card-body font-light w-fit h-fit">
-                                <p>A screenshot from MobileV application.</p>
-                            </div>
                         </div>
                         <p className='my-2'>
                             NudgeShare uses the <b>same</b> backend API as MobileV, at the clients request.
