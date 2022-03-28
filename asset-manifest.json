@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/ns-projectsite/static/css/main.97b53d4d.css",
-    "main.js": "/ns-projectsite/static/js/main.80abc9ff.js",
+    "main.css": "/ns-projectsite/static/css/main.621dc772.css",
+    "main.js": "/ns-projectsite/static/js/main.19d7e3d2.js",
+    "static/media/database.png": "/ns-projectsite/static/media/database.25df58e0bfa53e668517.png",
     "static/media/header.png": "/ns-projectsite/static/media/header.13a0210d5b068658f791.png",
-    "static/media/demo.png": "/ns-projectsite/static/media/demo.1e357d4ae22ff650b40d.png",
     "static/media/performance3.png": "/ns-projectsite/static/media/performance3.322756fa459e28838830.png",
+    "static/media/demo.png": "/ns-projectsite/static/media/demo.d57a8081ea4f109c8e43.png",
     "static/media/performance1.png": "/ns-projectsite/static/media/performance1.92469e8c4b247a739320.png",
     "static/media/system-diagram.png": "/ns-projectsite/static/media/system-diagram.74937c432415609b63c4.png",
+    "static/media/wordcloud.png": "/ns-projectsite/static/media/wordcloud.f40e610ee91ca63c6f3d.png",
+    "static/media/analysis.png": "/ns-projectsite/static/media/analysis.96c3109004c1ebbaaba4.png",
+    "static/media/recordings.png": "/ns-projectsite/static/media/recordings.6916bcd9d8a0965ba80b.png",
+    "static/media/gantt.png": "/ns-projectsite/static/media/gantt.db3d7e34ead9c0f8caea.png",
+    "static/media/Slide2.jpg": "/ns-projectsite/static/media/Slide2.2c9abbb82bfe09980ff0.jpg",
+    "static/media/Slide1.jpg": "/ns-projectsite/static/media/Slide1.eb0dda96d873cc296896.jpg",
     "static/media/site-map.png": "/ns-projectsite/static/media/site-map.f7dc6c7f5260282cdb66.png",
+    "static/media/use-case.png": "/ns-projectsite/static/media/use-case.b82a80d8d3321641fb03.png",
     "static/media/old-app-4.png": "/ns-projectsite/static/media/old-app-4.d9deba15eeafe98804db.png",
     "static/media/performance2.png": "/ns-projectsite/static/media/performance2.7617870d86f7d9e93941.png",
     "index.html": "/ns-projectsite/index.html",
-    "main.97b53d4d.css.map": "/ns-projectsite/static/css/main.97b53d4d.css.map",
-    "main.80abc9ff.js.map": "/ns-projectsite/static/js/main.80abc9ff.js.map"
+    "main.621dc772.css.map": "/ns-projectsite/static/css/main.621dc772.css.map",
+    "main.19d7e3d2.js.map": "/ns-projectsite/static/js/main.19d7e3d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b53d4d.css",
-    "static/js/main.80abc9ff.js"
+    "static/css/main.621dc772.css",
+    "static/js/main.19d7e3d2.js"
   ]
 }
