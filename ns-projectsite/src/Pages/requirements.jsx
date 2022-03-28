@@ -81,14 +81,401 @@ const Requirements = () => {
 
                 </div>
                 <div className='divider' />
-                <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
+                <div tabIndex="0" className="collapse collapse-arrow rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
                         &gt; Use Case Diagram
                     </h1>
                     <div className="collapse-content">
-
                         <img className='mx-auto rounded-2xl w-1/2' src={require('../App/pics/diagrams/use-case.png')} alt='use-case' />
+                    </div>
+                </div>
+                <div className='divider' />
+                <div tabIndex="0" className="collapse collapse-arrow rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Use Case List
+                    </h1>
+                    <div className="collapse-content">
+                        <p className='font-bold text-xl'>Note: that use cases are omitted for the backend (Admin/SRO's) since they are unaltered from MobileV.</p>
+                        <div class="overflow-x-auto">
+                            <table class="table mx-auto w-fit table-compact">
+                                <thead>
+                                    <tr>
+                                        <th className='bg-green-600 text-black'>ID</th>
+                                        <th className='bg-green-500 text-black'>Use Case</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>An app user adds a new recording and receives analysis on it.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>An app user views a saved recording and updates and/or shares it.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>An app user updates their consent to share their diary with their SRO</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>An app user deletes a saved recording</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>An app user views analysis related to their recordings.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div tabindex="0" class="collapse collapse-arrow my-4">
+                                <input type="checkbox" />
+                                <div class="collapse-title text-lg font-bold bg-green-500 text-black ">
+                                    1. Add Recording
+                                </div>
+                                <div class="collapse-content">
+                                    <table class="table mx-auto w-fit table-compact my-2">
+                                        <thead>
+                                            <tr>
+                                                <th className='bg-green-500 text-black'>Add Recording</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Category</th>
+                                                <td>PWA App</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID</th>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>An app user adds new recording and receives analysis (Transcript & WordCloud)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Primary Actors</th>
+                                                <td>App User</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Secondary Actors</th>
+                                                <td>IBM Watson STT Service</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Pre-conditions</th>
+                                                <td>
+                                                    <li>The app user is logged in to the app</li>
+                                                    <li>The app user is on the 'Records' page</li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Main Flow</th>
+                                                <td>
+                                                    <ul className='steps steps-vertical text-xs'>
+                                                        <li className='step step-primary'>The '+' button is pressed and the Add Recording page is visible.</li>
+                                                        <li className='step step-primary'>The user choses whether to make a 'Text' or 'Numeric' recording</li>
+                                                        <li className='step step-primary'>The user choses selects their desired recording duration.</li>
+                                                        <li className='step step-primary'>The user now clicks the big green circular record button with the pointer icon.</li>
+                                                        <li className='step step-primary italic'>If this is the first time user is recording, an alert is displayed asking for users microphone permission. (Handled by default by users browser).</li>
+                                                        <li className='step step-primary'>The user makes the recording with a timer displayed on screen showing the time elapased.</li>
+                                                        <li className='step step-primary'>The user CAN stop the recording at any time by pressing the big red circular button, if not the recording will stop automatically when it reaches the user set duration. </li>
+                                                        <li className='step step-primary'>An audio player is displayed allowing the user to playback their audio. There is also a delete button to delete the recording and start again (to step 2) </li>
+                                                        <li className='step step-primary'>There are optional data the user can input such as the scores, recording title and whether they would like to share the recording.</li>
+                                                        <li className='step step-primary'>The user clicks the 'Save' button</li>
+                                                        <li className='step step-primary'>The recording is saved and the user is taken to the 'Recordings' page where they can see all their recordings.</li>
+                                                        <li className='step step-secondary'>If the user has toggled the 'Share' option in Step 9 AND has accepted to share diary with SRO: </li>
+                                                        <li className='step step-secondary'>The recording is uploaded to the backend</li>
+                                                        <li className='step step-secondary'>An orange spinning icon is displayed near the Analysis text indicating Analysis is being sent</li>
+                                                        <li className='step step-secondary'>Once analysis is done, a green checkmarked icon is displayed near the Analysis text indicating Analysis is done</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-conditions</td>
+                                                <td>
+                                                    <li>The recording contains analysed data such as WPM, transcript and word cloud.</li>
+                                                    <li>The app users SRO can view and download the app user's shared recording and/or wordcloud.</li>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div tabindex="0" class="collapse collapse-arrow my-4">
+                                <input type="checkbox" />
+                                <div class="collapse-title text-lg font-bold bg-green-500 text-black ">
+                                    2. View Recording
+                                </div>
+                                <div class="collapse-content">
+                                    <table class="table mx-auto w-fit table-compact my-2">
+                                        <thead>
+                                            <tr>
+                                                <th className='bg-green-500 text-black'>View Recording</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Category</th>
+                                                <td>PWA App</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID</th>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>An app user wishes to view a saved recording and update scores and/or share it.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Primary Actors</th>
+                                                <td>App User</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Secondary Actors</th>
+                                                <td>IBM Watson STT Service</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Pre-conditions</th>
+                                                <td>
+                                                    <li>The app user is logged in to the app</li>
+                                                    <li>The app user is on the 'Records' page</li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Main Flow</th>
+                                                <td>
+                                                    <ul className='steps steps-vertical text-xs'>
+                                                        <li className='step step-primary'>The card for the recording to be viewed is pressed, a modal opens.</li>
+                                                        <li className='step step-primary'>The user can listen to the recording and view data including analysis, WPM, Transcript and word cloud.</li>
+                                                        <li className='text-base'>If 'Save' is pressed</li>
+                                                        <li className='step step-secondary'>Any changes e.g. scores, Recording Title are saved to the device</li>
+                                                        <li className='step step-secondary'>The modal is closed.</li>
+                                                        <li className='text-base'>If 'shared' was toggled before 'Save' pressed: </li>
+                                                        <li className='step step-secondary'>If already analysed, scores are updated in the backend</li>
+                                                        <li className='step step-warning'>If not analysed, check share consent & send recording to backend with scores and get WPM, transcript and wordcloud</li>
+                                                        <li className='step step-warning'>An orange spinning icon is displayed near the Analysis text indicating Analysis is being sent</li>
+                                                        <li className='step step-warning'>Once analysis is done, a green checkmarked icon is displayed near the Analysis text indicating Analysis is done</li>
+                                                        <li className='text-base'>If 'Csancel' button was pressed. </li>
+                                                        <li className='step step-primary'>Close modal</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-conditions</td>
+                                                <td>
+                                                    <li>The recording on the device has updated scores data.</li>
+                                                    <li>If newly shared, the app users SRO can view and download the app user's shared recording and/or wordcloud.</li>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div tabindex="0" class="collapse collapse-arrow my-4">
+                                <input type="checkbox" />
+                                <div class="collapse-title text-lg font-bold bg-green-500 text-black ">
+                                    3. Update Share Preferences
+                                </div>
+                                <div class="collapse-content">
+                                    <table class="table mx-auto w-fit table-compact my-2">
+                                        <thead>
+                                            <tr>
+                                                <th className='bg-green-500 text-black'>Update share preference</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Category</th>
+                                                <td>PWA App</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID</th>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>An app user wants to update their consent for sharing diary with SRO.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Primary Actors</th>
+                                                <td>App User</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Secondary Actors</th>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Pre-conditions</th>
+                                                <td>
+                                                    <li>The app user is logged in to the app</li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Main Flow</th>
+                                                <td>
+                                                    <ul className='steps steps-vertical text-xs'>
+                                                        <li className='step step-primary'>The user navigates to the 'Profile' page.</li>
+                                                        <li className='step step-primary'>The user clicks on 'Sharing diary with SRO' button.</li>
+                                                        <li className='step step-primary'>A modal is opened displaying the terms and conditions.</li>
+                                                        <li className='step step-primary'>A user selects their choice by checking/unchecking the checkbox.</li>
+                                                        <li className='text-base'>If 'Save' button is clicked</li>
+                                                        <li className='step step-success'>Consent details are updated on the users device.</li>
+                                                        <li className='step step-success'>Modal is closed</li>
+                                                        <li className='text-base'>If 'Cancel' button is clicked</li>
+                                                        <li className='step step-warning'>All changes are dismissed</li>
+                                                        <li className='step step-warning'>Modal is closed</li>
+
+
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-conditions</td>
+                                                <td>
+                                                    <li>The user's share preference are updated in the IndexedDB</li>
+                                                    <li>Any analysis that was waiting to be shared but couldn't because of the consent restriction, will now be send to the backend.</li>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div tabindex="0" class="collapse collapse-arrow my-4">
+                                <input type="checkbox" />
+                                <div class="collapse-title text-lg font-bold bg-green-500 text-black ">
+                                    4. Delete Recording
+                                </div>
+                                <div class="collapse-content">
+                                    <table class="table mx-auto w-fit table-compact my-2">
+                                        <thead>
+                                            <tr>
+                                                <th className='bg-green-500 text-black'>Delete recording</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Category</th>
+                                                <td>PWA App</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID</th>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>An app user deletes a saved recording.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Primary Actors</th>
+                                                <td>App User</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Secondary Actors</th>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Pre-conditions</th>
+                                                <td>
+                                                    <li>The app user is logged in to the app</li>
+                                                    <li>The app user is on the 'Records' page</li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Main Flow</th>
+                                                <td>
+                                                    <ul className='steps steps-vertical text-xs'>
+                                                        <li className='text-base'>If the user is on a Desktop: </li>
+                                                        <li className='step step-primary'>There will be a red 'trashcan' icon on the recording card the user wishes to delete.</li>
+                                                        <li className='text-base'>If the user is on a Mobile: </li>
+                                                        <li className='step step-primary'>The user clicks the card of the recording they wish to delete. </li>
+                                                        <li className='step step-primary'>A modal is appeared and a red 'trashcan' icon is visible. </li>
+                                                        <li className='step step-primary'>The user preses the icon and the record is deleted. </li>
+                                                        <li className='step step-primary'>The modal is closed. </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-conditions</td>
+                                                <td>
+                                                    <li>The recording has been deleted and is no longer visible in the list of recordings.</li>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div tabindex="0" class="collapse collapse-arrow my-4">
+                                <input type="checkbox" />
+                                <div class="collapse-title text-lg font-bold bg-green-500 text-black ">
+                                    5. View Analysis
+                                </div>
+                                <div class="collapse-content">
+                                    <table class="table mx-auto w-fit table-compact my-2">
+                                        <thead>
+                                            <tr>
+                                                <th className='bg-green-500 text-black'>View analysis</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Category</th>
+                                                <td>PWA App</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ID</th>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>An app user views analysis related to their recording.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Primary Actors</th>
+                                                <td>App User</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Secondary Actors</th>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Pre-conditions</th>
+                                                <td>
+                                                    <li>The app user is logged in to the app</li>
+                                                    <li>The app user is on the 'Analysis' page</li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Main Flow</th>
+                                                <td>
+                                                    <ul className='steps steps-vertical text-xs'>
+                                                        <li className='step step-primary break'>On the 'Usage' tab, the user can see a overall summary regarding the usage of the app, including number of recordings made and total number of minutes recorded.</li>
+                                                        <li className='step step-primary'>On the 'Analysis' tab, the user can see vertically-stacked charts for each of their scores for each month.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Post-conditions</td>
+                                                <td>
+                                                    <li>-</li>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div className="divider" />

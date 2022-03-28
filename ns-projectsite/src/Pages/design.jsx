@@ -239,9 +239,9 @@ const Design = () => {
                         <p className='my-2'>
                             NudgeShare uses the <b>same</b> backend API as MobileV, at the clients request.
                             An advantage of this was that the backend was tested throughly so no changes had to be made.
-                            Both the front-end and back-end are deployed on Ubuntu version 21.10.
+                            Both the front-end and back-end are deployed on a Linode Virtual Machiene running Ubuntu version 21.10.
                             The backend routes start with <span className='text-secondary font-mono'>/api</span>.
-                            The backend is also in a virtual enviornment to isolate it from the front-end ensuring optimal performance.
+                            The backend is also run inside a <span className='code-pink'>pyvenv</span> to isolate it from the front-end ensuring optimal performance.
                         </p>
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Front-end</h2>
                         <p className='my-2'>
