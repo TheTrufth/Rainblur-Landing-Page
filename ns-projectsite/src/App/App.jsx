@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Design from "../Pages/design";
 import Research from "../Pages/research";
 import Implementation from "../Pages/implementation";
+import Appendix from "../Pages/appendix";
 export default function App() {
     const [stickyClass, setStickyClass] = useState('relative');
 
@@ -48,6 +49,7 @@ export default function App() {
                         <Route path='ns-projectsite/design' element={<Design />} />
                         <Route path='ns-projectsite/research' element={<Research />} />
                         <Route path='ns-projectsite/implementation' element={<Implementation />} />
+                        <Route path='ns-projectsite/appendix' element={<Appendix />} />
                     </Routes>
                     {/* <!--Footer--> */}
 
