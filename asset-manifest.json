@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/ns-projectsite/static/css/main.7fcc4310.css",
-    "main.js": "/ns-projectsite/static/js/main.b6f606a6.js",
+    "main.css": "/ns-projectsite/static/css/main.397e61bc.css",
+    "main.js": "/ns-projectsite/static/js/main.788d750c.js",
     "static/media/share2.jpeg": "/ns-projectsite/static/media/share2.f43541211ed14386b3e4.jpeg",
-    "static/media/new-app-1.png": "/ns-projectsite/static/media/new-app-1.4fb6e4b6a60b660e77cf.png",
     "static/media/view-ana1.jpeg": "/ns-projectsite/static/media/view-ana1.a9a90458a13cc51a4ef4.jpeg",
     "static/media/records3.jpeg": "/ns-projectsite/static/media/records3.715b1839949c8c6e4942.jpeg",
     "static/media/view.jpeg": "/ns-projectsite/static/media/view.b900ca4b1969c87f7979.jpeg",
@@ -20,25 +19,35 @@
     "static/media/header.png": "/ns-projectsite/static/media/header.13a0210d5b068658f791.png",
     "static/media/performance3.png": "/ns-projectsite/static/media/performance3.322756fa459e28838830.png",
     "static/media/demo.png": "/ns-projectsite/static/media/demo.d57a8081ea4f109c8e43.png",
+    "static/media/old-app-16.png": "/ns-projectsite/static/media/old-app-16.20e0ca23921bed2fea49.png",
     "static/media/performance1.png": "/ns-projectsite/static/media/performance1.92469e8c4b247a739320.png",
     "static/media/system-diagram.png": "/ns-projectsite/static/media/system-diagram.74937c432415609b63c4.png",
+    "static/media/old-app-13.png": "/ns-projectsite/static/media/old-app-13.900740cc7bea47fb492a.png",
     "static/media/wordcloud.png": "/ns-projectsite/static/media/wordcloud.f40e610ee91ca63c6f3d.png",
     "static/media/analysis.png": "/ns-projectsite/static/media/analysis.96c3109004c1ebbaaba4.png",
     "static/media/recordings.png": "/ns-projectsite/static/media/recordings.6916bcd9d8a0965ba80b.png",
     "static/media/old-app-1.png": "/ns-projectsite/static/media/old-app-1.69aa6cc83bc93c3ae3c3.png",
+    "static/media/old-app-8.png": "/ns-projectsite/static/media/old-app-8.8e3dce0851631efd4711.png",
     "static/media/gantt.png": "/ns-projectsite/static/media/gantt.db3d7e34ead9c0f8caea.png",
     "static/media/Slide2.jpg": "/ns-projectsite/static/media/Slide2.2c9abbb82bfe09980ff0.jpg",
     "static/media/Slide1.jpg": "/ns-projectsite/static/media/Slide1.eb0dda96d873cc296896.jpg",
+    "static/media/old-app-11.png": "/ns-projectsite/static/media/old-app-11.0bac1b643df10fa65941.png",
     "static/media/site-map.png": "/ns-projectsite/static/media/site-map.f7dc6c7f5260282cdb66.png",
+    "static/media/old-app-12.png": "/ns-projectsite/static/media/old-app-12.ff42cc66126288236010.png",
     "static/media/use-case.png": "/ns-projectsite/static/media/use-case.b82a80d8d3321641fb03.png",
+    "static/media/old-app-5.png": "/ns-projectsite/static/media/old-app-5.257da0551f2386a98388.png",
     "static/media/old-app-4.png": "/ns-projectsite/static/media/old-app-4.d9deba15eeafe98804db.png",
+    "static/media/old-app-15.png": "/ns-projectsite/static/media/old-app-15.9798f05d729cdfb80eaa.png",
+    "static/media/old-app-9.png": "/ns-projectsite/static/media/old-app-9.35ccbadcb0031399fac2.png",
     "static/media/performance2.png": "/ns-projectsite/static/media/performance2.7617870d86f7d9e93941.png",
+    "static/media/old-app-3.png": "/ns-projectsite/static/media/old-app-3.4bfb3ef65314f11ece0c.png",
+    "static/media/old-app-7.png": "/ns-projectsite/static/media/old-app-7.d78a6b98126bca76f93e.png",
     "index.html": "/ns-projectsite/index.html",
-    "main.7fcc4310.css.map": "/ns-projectsite/static/css/main.7fcc4310.css.map",
-    "main.b6f606a6.js.map": "/ns-projectsite/static/js/main.b6f606a6.js.map"
+    "main.397e61bc.css.map": "/ns-projectsite/static/css/main.397e61bc.css.map",
+    "main.788d750c.js.map": "/ns-projectsite/static/js/main.788d750c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fcc4310.css",
-    "static/js/main.b6f606a6.js"
+    "static/css/main.397e61bc.css",
+    "static/js/main.788d750c.js"
   ]
 }
