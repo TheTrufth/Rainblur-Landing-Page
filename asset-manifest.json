@@ -1,9 +1,22 @@
 {
   "files": {
-    "main.css": "/ns-projectsite/static/css/main.29bc7662.css",
-    "main.js": "/ns-projectsite/static/js/main.3846a6bb.js",
+    "main.css": "/ns-projectsite/static/css/main.7fcc4310.css",
+    "main.js": "/ns-projectsite/static/js/main.b6f606a6.js",
+    "static/media/share2.jpeg": "/ns-projectsite/static/media/share2.f43541211ed14386b3e4.jpeg",
     "static/media/new-app-1.png": "/ns-projectsite/static/media/new-app-1.4fb6e4b6a60b660e77cf.png",
+    "static/media/view-ana1.jpeg": "/ns-projectsite/static/media/view-ana1.a9a90458a13cc51a4ef4.jpeg",
+    "static/media/records3.jpeg": "/ns-projectsite/static/media/records3.715b1839949c8c6e4942.jpeg",
+    "static/media/view.jpeg": "/ns-projectsite/static/media/view.b900ca4b1969c87f7979.jpeg",
+    "static/media/records5.jpeg": "/ns-projectsite/static/media/records5.83e48e743e33cb7fd16b.jpeg",
+    "static/media/share3.jpeg": "/ns-projectsite/static/media/share3.8cb92508904f69dc378b.jpeg",
+    "static/media/share4.jpeg": "/ns-projectsite/static/media/share4.7d9d26aacfc129455cfc.jpeg",
+    "static/media/view-ana2.jpeg": "/ns-projectsite/static/media/view-ana2.2f785f15ba58f3fd65c5.jpeg",
+    "static/media/records4.jpeg": "/ns-projectsite/static/media/records4.0898dee652a1f43000ce.jpeg",
+    "static/media/share1.jpeg": "/ns-projectsite/static/media/share1.42baea0ae81bf4fcc7b8.jpeg",
+    "static/media/records2.jpeg": "/ns-projectsite/static/media/records2.e55b52c412a157c96d2f.jpeg",
     "static/media/database.png": "/ns-projectsite/static/media/database.25df58e0bfa53e668517.png",
+    "static/media/records1.jpeg": "/ns-projectsite/static/media/records1.f565ccf36f6bbf7cfb30.jpeg",
+    "static/media/login.jpeg": "/ns-projectsite/static/media/login.cfbb69f2de0d2be24fbf.jpeg",
     "static/media/header.png": "/ns-projectsite/static/media/header.13a0210d5b068658f791.png",
     "static/media/performance3.png": "/ns-projectsite/static/media/performance3.322756fa459e28838830.png",
     "static/media/demo.png": "/ns-projectsite/static/media/demo.d57a8081ea4f109c8e43.png",
@@ -21,11 +34,11 @@
     "static/media/old-app-4.png": "/ns-projectsite/static/media/old-app-4.d9deba15eeafe98804db.png",
     "static/media/performance2.png": "/ns-projectsite/static/media/performance2.7617870d86f7d9e93941.png",
     "index.html": "/ns-projectsite/index.html",
-    "main.29bc7662.css.map": "/ns-projectsite/static/css/main.29bc7662.css.map",
-    "main.3846a6bb.js.map": "/ns-projectsite/static/js/main.3846a6bb.js.map"
+    "main.7fcc4310.css.map": "/ns-projectsite/static/css/main.7fcc4310.css.map",
+    "main.b6f606a6.js.map": "/ns-projectsite/static/js/main.b6f606a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.29bc7662.css",
-    "static/js/main.3846a6bb.js"
+    "static/css/main.7fcc4310.css",
+    "static/js/main.b6f606a6.js"
   ]
 }
