@@ -277,7 +277,7 @@ const Design = () => {
                 <div tabIndex="0" className="collapse container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
-                        &gt; Site Map
+                        &gt; Application Map
                     </h1>
 
                     <div className="collapse-content">

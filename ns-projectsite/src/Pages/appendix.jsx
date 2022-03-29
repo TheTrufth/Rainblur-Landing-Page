@@ -10,7 +10,7 @@ const Appendix = () => {
                 <div tabIndex="0" className="collapse container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
-                        &gt; User Manual - incomplete
+                        &gt; User Manual - for app
                     </h1>
 
                     <div className="collapse-content">
@@ -91,10 +91,8 @@ const Appendix = () => {
                             <div class="collapse-content">
                                 <div className="flex my-5">
                                     <ul className="steps steps-horizontal">
-                                        <li className="step step-primary mx-2"><img className='w-full' alt="" src={require('../App/pics/xemo/view-ana1.jpeg')} /> Navigate to 'Analysis' page. Here you will see a graph summarising number of records made as well as total duration</li>
-                                        <li className="step step-primary mx-2"><img className='w-full' alt="" src={require('../App/pics/xemo/view-ana2.jpeg')} />Navigate to the 'Scores' tab to see a graph of your scores.</li>
-
-
+                                        <li className="step step-primary mx-2"><img className='w-1/2' alt="" src={require('../App/pics/xemo/view-ana1.jpeg')} /> Navigate to 'Analysis' page. Here you will see a graph summarising number of records made as well as total duration</li>
+                                        <li className="step step-primary mx-2"><img className='w-1/2' alt="" src={require('../App/pics/xemo/view-ana2.jpeg')} />Navigate to the 'Scores' tab to see a graph of your scores.</li>
                                     </ul>
                                 </div>
                             </div>

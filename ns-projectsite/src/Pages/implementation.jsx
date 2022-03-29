@@ -87,11 +87,59 @@ const Implementation = () => {
                     </h1>
 
                     <div className="collapse-content">
-                        <ImgComparisonSlider>
-                            <img alt='' className='w-1/3' slot='second' src={require('../App/pics/old-app/old-app-1.png')} />
-                            <img alt='' className='w-1/2' slot='first' src={require('../App/pics/new-app/new-app-1.png')} />
+                        <div className="flex flex-row gap-x-8 flex-wrap gap-y-8">
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-1.png')} />
+                                <img alt='' className='w-56' slot='first' src={require('../App/pics/xemo/login.jpeg')} />
+                            </ImgComparisonSlider>
 
-                        </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-3.png')} />
+                                <img alt='' className='h-[25rem] w-56' slot='first' src={require('../App/pics/xemo/records1.jpeg')} />
+                            </ImgComparisonSlider>
+
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-4.png')} />
+                                <img alt='' className='h-[30rem] w-56' slot='first' src={require('../App/pics/xemo/records2.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-5.png')} />
+                                <img alt='' className='h-[30rem] w-56' slot='first' src={require('../App/pics/xemo/records3.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-7.png')} />
+                                <img alt='' className='h-[30rem] w-56' slot='first' src={require('../App/pics/xemo/records4.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-8.png')} />
+                                <img alt='' className='h-[30rem] w-56' slot='first' src={require('../App/pics/xemo/records5.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-9.png')} />
+                                <img alt='' className='h-[30rem] w-56' slot='first' src={require('../App/pics/xemo/share4.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-11.png')} />
+                                <img alt='' className='h-[27rem] w-56' slot='first' src={require('../App/pics/xemo/view.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-12.png')} />
+                                <img alt='' className='h-[27rem] w-56' slot='first' src={require('../App/pics/xemo/share1.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-13.png')} />
+                                <img alt='' className='h-[25rem] w-56' slot='first' src={require('../App/pics/xemo/share2.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-15.png')} />
+                                <img alt='' className='h-[25rem] w-56' slot='first' src={require('../App/pics/xemo/view-ana1.jpeg')} />
+                            </ImgComparisonSlider>
+                            <ImgComparisonSlider className='w-fit'>
+                                <img alt='' className='w-56' slot='second' src={require('../App/pics/old-app/old-app-16.png')} />
+                                <img alt='' className='h-[25rem] w-56' slot='first' src={require('../App/pics/xemo/view-ana2.jpeg')} />
+                            </ImgComparisonSlider>
+                        </div>
+
                     </div>
 
 
