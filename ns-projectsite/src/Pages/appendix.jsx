@@ -146,6 +146,119 @@ const Appendix = () => {
 
                 </div>
 
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box collapse-plus">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Privacy Policy and Front-End Package Licenses
+                    </h1>
+
+                    <div className="collapse-content">
+
+                        <div className="overflow-x-auto mx-auto">
+                            <p>You can find a copy of the privacy policy <a target={'_blank'} rel='noreferrer' className='underline' href='https://www.carefulai.com/privacy-policy.html'>here</a></p>
+                            <p className='my-5'>Here is the <a target={'_blank'} rel='noreferrer' className='underline' href='https://www.carefulai.com/data-sharing-agreement.html'> Terms & Conditions/Data Sharing Agreement</a></p>
+
+                            <table className='table mx-auto table-compact table-zebra'>
+                                <thead>
+                                    <tr>
+                                        <td>Library Name</td>
+                                        <td>Package Link on <span className="code-pink">npm</span></td>
+                                        <td>License</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>react-fontawesome</td>
+                                        <td>https://www.npmjs.com/package/@fortawesome/react-fontawesome</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>headlessUI react</td>
+                                        <td>https://www.npmjs.com/package/@headlessui/react</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>heroicons</td>
+                                        <td>https://www.npmjs.com/package/@heroicons/react?activeTab=readme</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>testing-library react</td>
+                                        <td>https://www.npmjs.com/package/@testing-library/react</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>axios</td>
+                                        <td>https://www.npmjs.com/package/axios</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>daisyUI</td>
+                                        <td>https://www.npmjs.com/package/daisyui</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IBD-Keyval</td>
+                                        <td>https://www.npmjs.com/package/idb-keyval</td>
+                                        <td>Apache-2.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react</td>
+                                        <td>https://www.npmjs.com/package/react</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react-dom</td>
+                                        <td>https://www.npmjs.com/package/react-dom</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react-router-dom</td>
+                                        <td>https://www.npmjs.com/package/react-router-dom</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react-scripts</td>
+                                        <td>https://www.npmjs.com/package/react-scripts</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react-select</td>
+                                        <td>https://www.npmjs.com/package/react-select</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>react-tabs</td>
+                                        <td>https://www.npmjs.com/package/react-tabs</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>recharts</td>
+                                        <td>https://www.npmjs.com/package/recharts</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>serve</td>
+                                        <td>https://www.npmjs.com/package/serve</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>workbox + other related packages</td>
+                                        <td>https://www.npmjs.com/package/workbox-core</td>
+                                        <td>MIT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
 
 
             </div>

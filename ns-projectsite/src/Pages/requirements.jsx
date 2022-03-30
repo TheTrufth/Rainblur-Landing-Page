@@ -524,8 +524,7 @@ const Requirements = () => {
                             The User App
                         </h2>
                         <div class="overflow-x-auto my-8">
-                            <table class="table w-full table-compact">
-
+                            <table class="table w-full table-compact bg-base-100">
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -538,17 +537,17 @@ const Requirements = () => {
                                     <tr>
                                         <th>1</th>
                                         <td>Record journal entries of up to 10 minutes</td>
-                                        <td>Filter journal entries being displayed (e.g. by date)</td>
+                                        <td>View graphs summarising usage (e.g. minutes journaled per week)</td>
                                     </tr>
                                     <tr>
                                         <th>2</th>
                                         <td>Record journal entries with a predetermined duration (e.g. 30s)</td>
-                                        <td>View graphs summarising usage (e.g. minutes journaled per week)</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th>3</th>
                                         <td>Give entries a name, description and up to 3 scores (set by SRO)</td>
-                                        <td>Opt-in to receive reminders once per week to record an entry</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <th>4</th>
@@ -582,21 +581,11 @@ const Requirements = () => {
                                     </tr>
                                     <tr>
                                         <th>10</th>
-                                        <td>Interact with these graphs to view word clouds for specific days</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>11</th>
                                         <td>Consent to automatically share self-specified data with their SRO</td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <th>12</th>
-                                        <td>Manually share entry data with contacts via WhatsApp</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>13</th>
+                                        <th>11</th>
                                         <td>Change their password</td>
                                         <td></td>
                                     </tr>
@@ -623,12 +612,6 @@ const Requirements = () => {
                                         <td>Register themselves (Admins retain 100% control)</td>
                                         <td>Opt-in to receive reminders once per week to record an entry</td>
                                     </tr>
-                                    <tr>
-                                        <th>3</th>
-                                        <td>Give entries a name, description and up to 3 scores (set by SRO)</td>
-                                        <td></td>
-                                    </tr>
-
                                 </tbody>
                             </table>
                         </div>

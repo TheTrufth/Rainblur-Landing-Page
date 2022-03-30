@@ -8,6 +8,7 @@ import Design from "../Pages/design";
 import Research from "../Pages/research";
 import Implementation from "../Pages/implementation";
 import Appendix from "../Pages/appendix";
+import Evaluation from "../Pages/evaluation";
 export default function App() {
     const [stickyClass, setStickyClass] = useState('relative');
 
@@ -50,6 +51,8 @@ export default function App() {
                         <Route path='ns-projectsite/research' element={<Research />} />
                         <Route path='ns-projectsite/implementation' element={<Implementation />} />
                         <Route path='ns-projectsite/appendix' element={<Appendix />} />
+                        <Route path='ns-projectsite/evaluation' element={<Evaluation />} />
+
                     </Routes>
                     {/* <!--Footer--> */}
 
