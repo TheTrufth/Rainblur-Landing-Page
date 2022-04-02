@@ -88,7 +88,8 @@ const Home = () => {
                     <div>
                         <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Jay McCaughrean</h1>
                         <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
-                            [Add jays info]
+                            Jay is a 2nd year Computer Science student at UCL. He is part of the development team for NudgeShare.
+                            This is the first web development project he has worked on. 
                         </div>
                     </div>
                     <div>
