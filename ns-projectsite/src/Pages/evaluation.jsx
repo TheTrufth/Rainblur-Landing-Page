@@ -206,63 +206,63 @@ const Evaluation = () => {
                                 <tbody>
                                     <tr>
                                         <td>Project Partners liaison</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>40%</td>
+                                        <td>30%</td>
+                                        <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td>Requirement Analysis</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>33%</td>
+                                        <td>33%</td>
+                                        <td>33%</td>
                                     </tr>
                                     <tr>
                                         <td>Research and Experiments</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>30%</td>
+                                        <td>30%</td>
+                                        <td>40%</td>
                                     </tr>
                                     <tr>
                                         <td>UI design</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>33%</td>
+                                        <td>33%</td>
+                                        <td>33%</td>
                                     </tr>
                                     <tr>
                                         <td>Coding</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>55%</td>
+                                        <td>17.5%</td>
+                                        <td>27.5%</td>
                                     </tr>
                                     <tr>
                                         <td>Testing</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>30%</td>
+                                        <td>0%</td>
+                                        <td>70%</td>
                                     </tr>
                                     <tr>
                                         <td>Report Website</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>40%</td>
+                                        <td>30%</td>
+                                        <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td>Video Editing</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>0%</td>
+                                        <td>100%</td>
+                                        <td>0%</td>
                                     </tr>
                                     <tr>
                                         <td>Overall contribution</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
-                                        <td>-%</td>
+                                        <td>50%</td>
+                                        <td>20%</td>
+                                        <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td>Main roles</td>
-                                        <td>-, -, -</td>
-                                        <td>-, -, -</td>
-                                        <td>-, -, -</td>
+                                        <td>Coder, Designer, Tester</td>
+                                        <td>Video Editor, Presentation Maker</td>
+                                        <td>Coder, Tester</td>
                                     </tr>
 
 
