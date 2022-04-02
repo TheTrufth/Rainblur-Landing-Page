@@ -255,8 +255,8 @@ const Evaluation = () => {
                                     <tr>
                                         <td>Overall contribution</td>
                                         <td>50%</td>
-                                        <td>20%</td>
-                                        <td>30%</td>
+                                        <td>25%</td>
+                                        <td>25%</td>
                                     </tr>
                                     <tr>
                                         <td>Main roles</td>
