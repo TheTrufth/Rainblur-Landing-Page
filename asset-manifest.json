@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ns-projectsite/static/css/main.70b726b6.css",
-    "main.js": "/ns-projectsite/static/js/main.a7dfd857.js",
+    "main.css": "/ns-projectsite/static/css/main.1d237f53.css",
+    "main.js": "/ns-projectsite/static/js/main.4419834e.js",
     "static/media/persona2.png": "/ns-projectsite/static/media/persona2.ee15c34ba35fb3da4ad1.png",
     "static/media/persona1.png": "/ns-projectsite/static/media/persona1.23be538b4b31cd5790b1.png",
     "static/media/new-app-6.png": "/ns-projectsite/static/media/new-app-6.55c56a7ec1e328a21b6e.png",
@@ -52,20 +52,18 @@
     "static/media/old-app-7.png": "/ns-projectsite/static/media/old-app-7.d78a6b98126bca76f93e.png",
     "static/media/saveFully.png": "/ns-projectsite/static/media/saveFully.12ce49b6eb2f200ed2b0.png",
     "static/media/analysis-performance.png": "/ns-projectsite/static/media/analysis-performance.63ef94f429d6654aa28c.png",
-    "static/media/ana2.png": "/ns-projectsite/static/media/ana2.27194e1eb6aa5833c5b8.png",
     "static/media/saveExports.png": "/ns-projectsite/static/media/saveExports.1bb7d3c99ad9ab12f1dd.png",
-    "static/media/ana1.jpeg": "/ns-projectsite/static/media/ana1.c2dd3b247e0486fa56b8.jpeg",
     "static/media/useRecorder2.png": "/ns-projectsite/static/media/useRecorder2.aa394dee6ad6c14410ca.png",
     "static/media/preview3.png": "/ns-projectsite/static/media/preview3.9c044def5a04d10bab8f.png",
     "static/media/previewRec2.png": "/ns-projectsite/static/media/previewRec2.da77432a3e35ac15eea5.png",
     "static/media/ana4.jpeg": "/ns-projectsite/static/media/ana4.bc121e03d47bb48f901d.jpeg",
     "static/media/ana3.jpeg": "/ns-projectsite/static/media/ana3.e466aa4a5a6eab1ac0ec.jpeg",
     "index.html": "/ns-projectsite/index.html",
-    "main.70b726b6.css.map": "/ns-projectsite/static/css/main.70b726b6.css.map",
-    "main.a7dfd857.js.map": "/ns-projectsite/static/js/main.a7dfd857.js.map"
+    "main.1d237f53.css.map": "/ns-projectsite/static/css/main.1d237f53.css.map",
+    "main.4419834e.js.map": "/ns-projectsite/static/js/main.4419834e.js.map"
   },
   "entrypoints": [
-    "static/css/main.70b726b6.css",
-    "static/js/main.a7dfd857.js"
+    "static/css/main.1d237f53.css",
+    "static/js/main.4419834e.js"
   ]
 }
