@@ -255,8 +255,8 @@ const Evaluation = () => {
                                     <tr>
                                         <td>Overall contribution</td>
                                         <td>50%</td>
-                                        <td>25%</td>
-                                        <td>25%</td>
+                                        <td>20%</td>
+                                        <td>30%</td>
                                     </tr>
                                     <tr>
                                         <td>Main roles</td>
@@ -290,7 +290,7 @@ const Evaluation = () => {
                     <div className="collapse-content">
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Critical Evaluation of the Project</h2>
                         <p>We conducted an honest evaluation of the finished product and the work we put into it. The evaluation is divided into 5 segments: functionality, UI and UX, compatibility, maintainability, and project management.</p>
-                        
+
                         <h2 className='text-2xl underline underline-offset-2 text-primary'>Functionality</h2>
                         <p>We successfully transferred all existing functionality from MobileV1 to Nudge Share. Nudge Share connects seamlessly with the existing backend API endpoints of MobileV1 to complete speech analysis with IMB Watson. Indeed, 100% of “Must Have’s” from our list of requirements has been achieved. We also completed 50% of optional requirements such as the ability to change passwords. All functionality has been tested and is confirmed to be working.</p>
                         <p>Score: 10/10</p>
