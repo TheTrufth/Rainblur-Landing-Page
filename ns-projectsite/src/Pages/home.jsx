@@ -124,9 +124,9 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Nick</h1>
+                        <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Nicholas Daskalovic</h1>
                         <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
-                            [Add nicks info]
+                            Nick is also a 2nd year Computer Science student at UCL and a part of the developement team for NudgeShare. He has previous experience with full-stack development as well as a number of back-end projects in his resume. This is is his first front-end only project in React.
                         </div>
                     </div>
 
