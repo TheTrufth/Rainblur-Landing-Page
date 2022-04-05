@@ -77,6 +77,90 @@ const Implementation = () => {
 
                 </div>
 
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Implementation: Making Recordings
+                    </h1>
+
+                    <div className="collapse-content">
+
+                        <p className='my-2'>
+                            When recording audio, the custom hook <span className="code-pink">useRecorder</span> is used.
+                            It controls the state of the recorder which is outlined below.
+                            This code was adapted from here, modified to our usage for saving the <span className="code-pink">Blob</span> object.
+                        </p>
+                        <div class="mx-auto my-2 mb-3 card w-full shadow-xl">
+                            <figure><img className='rounded-2xl w-4/12' src={require('../App/pics/implementation/make-recording/recorderState.png')} alt="system-diagram" /></figure>
+                        </div>
+                        <table className='table table-compact'>
+                            <thead>
+                                <tr>
+                                    <td>Property</td>
+                                    <td>Usage</td>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="code-pink">recordingMinutes, recordingSeconds</td>
+                                    <td>These properties are the elapsed time in minutes+seconds of the recording.</td>
+                                </tr>
+                                <tr>
+                                    <td className="code-pink">initRecording</td>
+                                    <td><span className="code-pink">True</span> if currently recording else <span className="code-pink">False</span>.</td>
+                                </tr>
+                                <tr>
+                                    <td className="code-pink">mediaStream</td>
+                                    <td className='flex flex-col'>
+                                        <p>As per documentation: It prompts the user for permission to use a microphone which produces a <span className="code-pink">MediaStream</span>
+                                        </p>
+                                        <p>with tracks containing <span className="code-pink">mp3</span>.</p>
+                                        <p>See: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="code-pink">mediaRecorder</td>
+                                    <td className='flex flex-col'>
+                                        <p>As per documentation: It takes in a  <span className="code-pink">MediaStream</span> object
+                                        </p>
+                                        <p>which creates a recorder object that can call methods like <span className="code-pink">.startRecording()</span>.</p>
+                                        <p>See: https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="mx-auto mb-3 card shadow-xl md:flex-row">
+                            <figure><img className='rounded-2xl w-12/12' src={require('../App/pics/implementation/make-recording/useRecorder2.png')} alt="system-diagram" /></figure>
+                            <div class="card-body font-light w-5/12">
+                                <p>The hook returns the <span className="code-pink">recorderState</span> (explained above) and the functions <span className="code-pink">startRecording()</span>, <span className="code-pink">cancelRecording()</span>, <span className="code-pink">saveRecording()</span>  which are used in the add recording Page (shown below).</p>
+                            </div>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='rounded-2xl w-2/3' src={require('../App/pics/implementation/make-recording/addRecording1.png')} alt="system-diagram" /></figure>
+                            <figure><img className='rounded-2xl w-2/3' src={require('../App/pics/implementation/make-recording/previewRec2.png')} alt="system-diagram" /></figure>
+                            <figcaption>Once the user has finished their recording and has clicked the stop button (or the set timer has run out),  <span className="code-pink">previewRecording()</span> is called.
+                                This function sets the recording data to with the following properties listed below. It then saves the recording temporarily for the user to playback the audio.
+                                If the user wishes to delete the recording, the recording will also be deleted from the device.
+                            </figcaption>
+                            <figure><img className='rounded-2xl w-2/3' src={require('../App/pics/implementation/make-recording/preview3.png')} alt="system-diagram" /></figure>
+                            <figcaption>
+                                <span className="code-pink">previewRecording()</span> also allows the user see the inputs for <span className="code-pink">scores</span> and <span className="code-pink">recordingTitle</span>.
+                                Once they have submitted those information and clicked the save button, <span className="code-pink">saveFully()</span> is called saving the recording with the updated scores and recording titles on the users device.</figcaption>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl flex flex-row">
+                            <figure><img className='rounded-2xl w-1/2' src={require('../App/pics/new-app/new-app-6.png')} alt="system-diagram" /></figure>
+                            <figure><img className='rounded-2xl w-full' src={require('../App/pics/implementation/make-recording/saveFully.png')} alt="system-diagram" /></figure>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
 
 
                 <div className="divider" />

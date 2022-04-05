@@ -43,9 +43,40 @@ const Home = () => {
 
                         <div className="flex my-5">
                             <ul className="steps steps-horizontal">
-                                <li className="step step-primary mx-2"><img className='w-10/12 transition hover:scale-105 duration-700 ease-in-out hover:-rotate-6' alt="" src={require('../App/pics/home/recordings.png')} /> Add recording</li>
-                                <li className="step step-primary mx-2"><img className='w-10/12 transform  transition hover:scale-105 duration-700 ease-in-out' alt="" src={require('../App/pics/home/wordcloud.png')} />Share with SRO & View transcript/wordcloud</li>
-                                <li className="step step-primary mx-2"><img className='w-10/12 transform transition hover:scale-105 duration-700 ease-in-out hover:rotate-6' alt="" src={require('../App/pics/home/analysis.png')} />Get visual representation of how your progress is!</li>
+                                <li className="step step-primary mx-2">
+                                    <div class="mockup-phone">
+                                        <div class="camera"></div>
+                                        <div class="display">
+                                            <div class="artboard artboard-demo phone-1">
+                                                <img alt="" src={require('../App/pics/xemo/records5.jpeg')} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Add recording
+                                </li>
+                                <li className="step step-primary mx-2 z-20">
+                                    <div class="mockup-phone">
+                                        <div class="camera"></div>
+                                        <div class="display">
+                                            <div class="artboard artboard-demo phone-1">
+                                                <img alt="" src={require('../App/pics/xemo/view.jpeg')} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Share with SRO & View transcript/wordcloud
+                                </li>
+                                <li className="step step-primary mx-2 z-40">
+                                    <div class="mockup-phone">
+                                        <div class="camera"></div>
+                                        <div class="display">
+                                            <div class="artboard artboard-demo phone-1">
+                                                <img alt="" src={require('../App/pics/xemo/view-ana1.jpeg')} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Get visual representation of how your progress is!
+                                </li>
+
                             </ul>
                         </div>
 
@@ -89,7 +120,7 @@ const Home = () => {
                         <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Jay McCaughrean</h1>
                         <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
                             Jay is a 2nd year Computer Science student at UCL. He is part of the development team for NudgeShare.
-                            This is the first web development project he has worked on. 
+                            This is the first web development project he has worked on.
                         </div>
                     </div>
                     <div>
