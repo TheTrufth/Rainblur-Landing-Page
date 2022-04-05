@@ -200,7 +200,7 @@ const Evaluation = () => {
                                         <td>Work packages</td>
                                         <td>Dinesh Anantharaja</td>
                                         <td>Jay McCaughrean</td>
-                                        <td>Nick Daskovolic</td>
+                                        <td>Nick Daskalovic</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -254,9 +254,9 @@ const Evaluation = () => {
                                     </tr>
                                     <tr>
                                         <td>Overall contribution</td>
-                                        <td>50%</td>
-                                        <td>20%</td>
-                                        <td>30%</td>
+                                        <td>40%</td>
+                                        <td>25%</td>
+                                        <td>35%</td>
                                     </tr>
                                     <tr>
                                         <td>Main roles</td>
