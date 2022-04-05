@@ -8,7 +8,7 @@ const HCI = () => {
                 <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
-                        &gt; Gathering Requirements
+                        &gt; User Interviews
                     </h1>
 
 
@@ -108,13 +108,102 @@ const HCI = () => {
                 <div tabIndex="0" className="collapse container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
-                        &gt; Prototypes
+                        &gt; Prototype Sketches
                     </h1>
 
                     <div className="collapse-content">
                         <p className='my-2'>
                             Based on the personas and scenarios, we produced some sketches to put our ideas into a visual form. We created sketches for the mobile interface and a desktop interface. We gathered pseudo-user feedback and opinions on these sketches and made the necessary changes toward the prototype. Our primary goal here was to conceptualise an app that is compatible with mobile and desktop interfaces.  It was apparent that this was needed from the Personas that we made.
                         </p>
+
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='w-10/12' src={require('../App/pics/hci/login.jpg')} alt="login" /></figure>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='w-10/12' src={require('../App/pics/hci/navigation.jpg')} alt="navigation" /></figure>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='w-10/12' src={require('../App/pics/hci/create.jpg')} alt="create" /></figure>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='w-10/12' src={require('../App/pics/hci/recordings.jpg')} alt="recordings" /></figure>
+                        </div>
+                        <div class="mx-auto mb-3 card w-full shadow-xl">
+                            <figure><img className='w-10/12' src={require('../App/pics/hci/analysis.jpg')} alt="analysis" /></figure>
+                        </div>
+        
+                    </div>
+
+                </div>
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box collapse-plus">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Evaluation of Prototype Sketches
+                    </h1>
+
+                    <div className="collapse-content">
+                        <h2 className='text-2xl underline underline-offset-2 text-primary'>Critical Evaluation of the Project</h2>
+                        <p>Based on the prototypes we created, we conducted a heuristics evaluation. We interviewed potential users to see if they could intuitively navigate the UI presented in the prototype. Here is a list of problems we collected, and corresponding solutions. </p>
+
+                        <div class="overflow-x-auto">
+                            <table class="table w-full table-compact">
+                                <thead>
+                                    <tr>
+                                        <th>Problem</th>
+                                        <th>Solution</th>
+                                        <th>Severity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Input fields for login are too low on mobile screen. It will be covered by the on-screen keyboard.
+                                        </td>
+                                        <td>
+                                        Either have the input fields shift up when the keyboard appears or emit the logo to have the fields render higher on the screen. 
+                                        </td>
+                                        <td>
+                                            8/10
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>The button to create new recordings may not be obvious enough.</td>
+                                        <td>
+                                        Have a text “click here to make a recording” appear above the plus button for new users. The text could also appear after the user is on the page for a certain amount of time.
+                                        </td>
+                                        <td>
+                                            6/10
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        Navigation bar on the mobile version only has the icons which could be confusing for users.
+                                        </td>
+                                        <td>
+                                        Add small text (eg. Analysis, and Recordings) below the navigation icons. However, this could make it look cluttered. 
+                                        </td>
+                                        <td>
+                                            5/10
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="divider" />
+                <div tabIndex="0" className="collapse container rounded-box">
+                    <input type="checkbox" />
+                    <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
+                        &gt; Final Prototype Mockups
+                    </h1>
+
+                    <div className="collapse-content">
+                        <p className='my-2'>
+                            Based on the sketches and evaluation, here are the final prototype designs we created.
+                        </p>
+
                         <div class="mx-auto mb-3 card w-full shadow-xl">
                             <figure><img className='w-10/12' src={require('../App/pics/hci/p1.jpg')} alt="persona1" /></figure>
                         </div>
