@@ -7,12 +7,12 @@ const Testing = () => {
                 </h1>
                 <div className="container">
                     <h1 className='text-2xl md:text-3xl'>Testing Strategy</h1>
-                    <p className='my-1'>We used a combination of unit, integration, user, compatibility, performance and responsive design testing to rigorously test our product’s code base and real-world usability. </p>
+                    <p className='my-1'>We used a combination of integration, user, compatibility, performance and responsive design testing to rigorously test our product’s code base and real-world usability. </p>
                 </div>
                 <div tabIndex="0" className="collapse collapse-arrow container rounded-box">
                     <input type="checkbox" />
                     <h1 className="collapse-title bg-clip-text text-transparent bg-gradient-to-bl from-sky-400 via-teal-400 to-lime-600 text-center text-2xl md:text-4xl underline-offset-8 mb-8 underline decoration-pink-600">
-                        &gt; Unit and integration testing 🧪
+                        &gt; Integration testing 🧪
                     </h1>
 
 
@@ -22,7 +22,7 @@ const Testing = () => {
                         </div>
                         <p className='my-2'>
                             We used the <span className="code-pink">Cypress</span> JavaScript library to create automated integration testing of NudgeShare. This included the testing of separate parts of the app such as login, password changes, creating recordings and sharing recordings as well as integration testing of all functionalities together in different flows. We used <span className="code-pink">Istanbul[1]</span>, a JavaScript code coverage tool, to instrument our code and complete code coverage of our Cypress tests in which we achieved <span className="code-pink">90.26%</span> coverage of the code base.
-                            The main goal of this testing was to rigorously test the React app and its rendering of components correctly in an automated fashion. The code passed all test and had excellent code coverage too. This is a good indicator to the performance of the application as Cypree performs all test using a simulated broswer.
+                            The main goal of this testing was to rigorously test the React app and its rendering of components correctly in an automated fashion. The code passed all test and had excellent code coverage too. This is a good indicator to the performance of the application as Cypress performs all test using a simulated broswer.
                         </p>
                         <span className="my-2">[1] K. Anantheswaran, “gotwarlost/istanbul,” GitHub, Apr. 03, 2022. <a className='underline' href='https://github.com/gotwarlost/istanbul' target={'_blank'} rel='noreferrer'>https://github.com/gotwarlost/istanbul</a></span>
                         <div class="mx-auto mb-3 card w-8/12 bg-base-100 shadow-xl">

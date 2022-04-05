@@ -236,9 +236,9 @@ const Evaluation = () => {
                                     </tr>
                                     <tr>
                                         <td>Testing</td>
-                                        <td>30%</td>
+                                        <td>10%</td>
                                         <td>0%</td>
-                                        <td>70%</td>
+                                        <td>90%</td>
                                     </tr>
                                     <tr>
                                         <td>Report Website</td>
