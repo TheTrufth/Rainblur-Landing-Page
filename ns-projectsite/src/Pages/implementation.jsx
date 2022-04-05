@@ -204,13 +204,53 @@ const Implementation = () => {
                             One of the most important features of NudgeShare is the option for users to share recordings and personal scores with their SRO. This is done by sending recordings and accompanying data via POST requests to the legacy backend that we have been working with, where the Flask application will use the IBM Watson Speech-to-Text SDK to perform an analysis of the user’s recording. This is then shared with the user’s SRO and can provide great insight into the wellbeing and health status of a user.
                         </p>
                         <div class="mx-auto my-2 mb-3 card w-full shadow-xl">
-                            <figure><img className='rounded-2xl w-full' src={require('../App/pics/implementation/analysis/ana1.jpeg')} alt="system-diagram" /></figure>
+                            <div class="mockup-code h-fit ">
+                                <pre><code>
+                                    {`
+        export default async function checkRecordings(updateRecordingAnalysis) {
+            var recordings = await get("Recordings").then(val => { return val; })
+            const shareConsent = await get("shareConsent").then(val => { return val; })
+            if (recordings) {
+                for (let index = 0; index < recordings.length; index++) {
+                    var recording = recordings[index]
+                    // onty send a recording that has not yet been sent but should be, and share agreement is confirmed by user
+                    if (shareConsent && recording['recordingData']['shareType'] && recording['recordingData']['analysisStatus'] === "pending") {
+                        const response = await sendRequest(recording)
+                        if (response) {
+                            recording['recordingData']['analysisStatus'] = "pendingResult"
+                            updateRecordingAnalysis('pendingResult', {}, recording['key'])
+                        }
+                    }
+                    // request the result of analysis if a recording if it has already been sent and result not yet received
+                    else if (recording['recordingData']['shareType'] && recording['recordingData']['analysisStatus'] === "pendingResult") {
+                        var response = await pendAnalysis({ 'dateRecorded': recording['recordingData']['dateRecorded'] })
+                        if (response) {
+                            updateRecordingAnalysis('complete', response, recording['key'])
+                        }
+                    }
+
+                }
+            }
+        }
+`}
+                                </code></pre>
+                            </div>
                         </div>
                         <p className="my-2">
                             We decided to create a background task in the application that would process new recordings and send them to the backend if needed. This is only done when the user has agreed to the Share Agreement and has selected the option for a recording to be shared. The background task runs every 5 seconds. We thought this to be a suitable interval as to not hinder app performance, but also to not burden the backend server with requests. The task can be found in the src/components/Recordings/hooks/shareRecordings.js file, where the checkRecordings() function is the task being run every 5 seconds from src/App/App.jsx. To minimise load to the user’s device, the task is only run when the device has a network connection, and the user is logged in.
                         </p>
                         <div class="mx-auto my-2 mb-3 card w-full shadow-xl">
-                            <figure><img className='rounded-2xl w-full' src={require('../App/pics/implementation/analysis/ana2.png')} alt="system-diagram" /></figure>
+                            <div class="mockup-code h-fit ">
+                                <pre><code>
+                                    {`
+    const interval = setInterval(() => {
+        window.navigator.onLine &&
+          checkRecordings(RecordingContext.updateRecordingAnalysis)
+      }, 5000);
+    return () => clearInterval(interval);
+`}
+                                </code></pre>
+                            </div>
                         </div>
                         <p className="my-2">
                             The function will go through all recordings that are stored on the user’s device and perform analysis on those that have not yet been sent to the backend but should be (i.e. newly made recordings) and also query the backend for results of analyses that have been requested, but not yet received. In each case, the recording will be updated in the local IDB-Keyval database if the response from the backend requires so.
