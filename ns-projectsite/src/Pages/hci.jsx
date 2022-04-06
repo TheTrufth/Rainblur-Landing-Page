@@ -86,7 +86,7 @@ const HCI = () => {
 
                     <div className="collapse-content">
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/persona1.png')} alt="persona1" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/persona1.png')} alt="persona1" /></figure>
                         </div>
                         <h1>Kate McGinley (Muscular Dystrophy Patient) Age: 30</h1>
                         <p className='my-2'>
@@ -94,7 +94,7 @@ const HCI = () => {
                         </p>
 
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/persona2.png')} alt="persona2" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/persona2.png')} alt="persona2" /></figure>
                         </div>
                         <h1>Kyle George Michael (Young Working Adult) Age: 23</h1>
                         <p className='my-2'>
@@ -117,19 +117,19 @@ const HCI = () => {
                         </p>
 
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/login.jpg')} alt="login" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/login.jpg')} alt="login" /></figure>
                         </div>
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/navigation.jpg')} alt="navigation" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/navigation.jpg')} alt="navigation" /></figure>
                         </div>
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/create.jpg')} alt="create" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/create.jpg')} alt="create" /></figure>
                         </div>
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/recordings.jpg')} alt="recordings" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/recordings.jpg')} alt="recordings" /></figure>
                         </div>
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/analysis.jpg')} alt="analysis" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/analysis.jpg')} alt="analysis" /></figure>
                         </div>
         
                     </div>
@@ -205,15 +205,15 @@ const HCI = () => {
                         </p>
 
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/p1.jpg')} alt="persona1" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/p1.jpg')} alt="persona1" /></figure>
                         </div>
                         
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/p2.jpg')} alt="persona1" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/p2.jpg')} alt="persona1" /></figure>
                         </div>
 
                         <div class="mx-auto mb-3 card w-full shadow-xl">
-                            <figure><img className='w-10/12' src={require('../App/pics/hci/p3.jpg')} alt="persona1" /></figure>
+                            <figure><img className='w-10/12 max-w-2xl' src={require('../App/pics/hci/p3.jpg')} alt="persona1" /></figure>
                         </div>
         
                     </div>

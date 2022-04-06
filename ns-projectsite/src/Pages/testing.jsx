@@ -286,7 +286,8 @@ const Testing = () => {
 
                         </div>
                         <p>
-                            Overall, the feedback we received was positive, however, it did outline certain issues with the app that we had not experienced before. For example, one mobile user reported that one of their recordings were lost after saving it, which suggests a potential bug in our code. Furthermore, it was not clear to all of the users that the share agreement must be completed before analysis can be performed, which is a potential future improvement that can be made in the form of a prompt or message to the user.
+                            Overall, the feedback we received was positive, however, it did outline certain issues with the app and its user experience. For example, it was not clear to all of the users that the share agreement must be completed before analysis can be performed, which is a potential future improvement that can be made in the form of a prompt or message to the user.
+                            Out take from the user testing was positive overall, and we were happy that the users found the application more than usable in a real world scenario with no major bugs.
                         </p>
 
                     </div>
