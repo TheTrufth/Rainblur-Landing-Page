@@ -39,13 +39,13 @@ const Testing = () => {
                     </h1>
 
                     <div className="collapse-content">
-
                         <p className='my-2'>
                             One of the main goals of this project was to create a responsive product for all devices. We tested the functionality and responsiveness of the deployed application on a range of devices ourselves to ensure that all elements are visible and/or accessible.
                         </p>
-                        <p className="my-2">Usage, scores, records screen, word cloud view, recording screen, save screen, login screen for each (see folder on teams, 7 screenshots each, iPad has extra for portrait) </p>
                         <p className="my-2">From our manual testing, the app performs correctly on all platforms, with no difference in functionality and accessibility between devices and screen sizes. Smaller devices do require scrolling to access certain elements, and this is always achievable by swiping on mobile devices.
                         </p>
+
+
                     </div>
 
                 </div>

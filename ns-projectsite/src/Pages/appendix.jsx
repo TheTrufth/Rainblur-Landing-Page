@@ -5,7 +5,6 @@ const Appendix = () => {
                 <h1 className=" w-full text-3xl md:text-5xl opacity-75 font-bold leading-tight text-center transform transition hover:scale-105 duration-300 ease-in-out ">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r mx-2 from-green-400 via-pink-500 to-purple-500 uppercase font-bold">Appendix</span>
                 </h1>
-
                 <div className="divider" />
                 <div tabIndex="0" className="collapse container rounded-box">
                     <input type="checkbox" />

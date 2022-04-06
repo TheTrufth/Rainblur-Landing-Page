@@ -20,6 +20,7 @@ const Navbar = () => {
                     <Link to="ns-projectsite/implementation" className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out">Implementation</Link>
                     <Link to="ns-projectsite/evaluation" className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out">Evaluation</Link>
                     <Link to="ns-projectsite/appendix" className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out">Appendix</Link>
+                    <a target={"_blank"} rel="noreferrer" href="https://thetrufth.github.io/mobile-v-Blog/" className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out">Blog</a>
                     <Outlet />
                 </div>
             </div>

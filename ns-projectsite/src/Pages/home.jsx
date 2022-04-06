@@ -13,6 +13,9 @@ const Home = () => {
                         voice diary that tracks feelings.
                     </h1>
                     <div className="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
+                        <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+                            Available at <a target={"_blank"} rel="noreferrer" className="underline" href="https://nudgeshare.org/">https://nudgeshare.org/</a>
+                        </p>
                         <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Abstract</h1>
                         <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
                             Speech is useful for analysing conditions like depression.
@@ -85,9 +88,11 @@ const Home = () => {
                 </div>
             </>
             <>
+                {/*  width="950" height="534" */}
                 <div className="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
                     <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Demo Video</h1>
-                    <div className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+                    <div className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left mx-auto">
+                        <iframe className="mx-auto w-90 h-52 sm:w-[475px] sm:h-[267px] lg:w-[950px] md:h-[534px]" src="https://www.youtube.com/embed/1xgCNK4l-Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
 
@@ -108,27 +113,37 @@ const Home = () => {
             <>
                 <div className="flex flex-col w-full justify-center lg:items-start overflow-y-hidden">
                     <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">The Team</h1>
-                    <div>
-                        <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Lead - Dinesh Anantharaja</h1>
-                        <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
-                            Dinesh is a 2nd year Computer Science student at UCL and is the lead developer for the NudgeShare project.
-                            He is interested in Mobile and Web development as well as machine learning.
-                            It is his first time developing a full-scale React application.
+                    <div className="ml-6 flex gap-x-7">
+                        <img className="w-1/2 md:w-2/12 rounded-2xl mx-auto transform transition hover:scale-105 duration-700 ease-in-out hover:-rotate-6" src={require('../App/pics/our_pics/Dinesh.JPG')} alt="Dinesh" />
+                        <div className="flex flex-col">
+                            <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Lead - Dinesh Anantharaja</h1>
+                            <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
+                                Dinesh is a 2nd year Computer Science student at UCL and is the lead developer for the NudgeShare project.
+                                He is interested in Mobile and Web development as well as machine learning.
+                                It is his first time developing a full-scale React application.
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Jay McCaughrean</h1>
-                        <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
-                            Jay is a 2nd year Computer Science student at UCL. He is part of the development team for NudgeShare.
-                            This is the first web development project he has worked on.
+                    <div className="mr-6 flex gap-x-7">
+                        <div className="flex flex-col">
+                            <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Jay McCaughrean</h1>
+                            <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
+                                Jay is a 2nd year Computer Science student at UCL. He is part of the development team for NudgeShare.
+                                This is the first web development project he has worked on.
+                            </div>
+                        </div>
+                        <img className="w-1/2 md:w-2/12 rounded-2xl mx-auto transform transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src={require('../App/pics/our_pics/Jay.JPG')} alt="Jay" />
+                    </div>
+                    <div className="ml-6 flex gap-x-7">
+                        <img className="w-1/4 md:w-3/12 rounded-2xl mx-auto transform transition hover:scale-105 duration-700 ease-in-out hover:-rotate-6" src={require('../App/pics/our_pics/Nick.JPG')} alt="Nick" />
+                        <div className="flex flex-col">
+                            <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Nicholas Daskalovic</h1>
+                            <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
+                                Nick is also a 2nd year Computer Science student at UCL and a part of the developement team for NudgeShare. He has previous experience with full-stack development as well as a number of back-end projects in his resume. This is is his first front-end only project in React.
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h1 className="my-4 text-md md:text-2xl text-white opacity-75 font-bold leading-tight text-center md:text-left">Team Member - Nicholas Daskalovic</h1>
-                        <div className="leading-normal text-base md:text-xl mb-8 text-center md:text-left">
-                            Nick is also a 2nd year Computer Science student at UCL and a part of the developement team for NudgeShare. He has previous experience with full-stack development as well as a number of back-end projects in his resume. This is is his first front-end only project in React.
-                        </div>
-                    </div>
+
 
                 </div>
             </>
